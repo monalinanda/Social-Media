@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import ChattingApp from "./ChattingApp";
 import Homepage from "./Homepage";
 import Login from "./Login/Login";
@@ -18,14 +18,14 @@ function App() {
 
   return firebaseInitialized !== false ? (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Register} />
           <Route exact path="/chatting" component={ChattingApp} />
         </Switch>
-      </Router>
+      </HashRouter>
     </div>
   ) : (
     <div id="loader">
