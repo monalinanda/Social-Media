@@ -9,8 +9,6 @@ const config = {
   projectId: "social-media-57e75",
   storageBucket: "social-media-57e75.appspot.com",
   messagingSenderId: "297462533566",
-  appId: "1:297462533566:web:0982109dee9b48e1e5bdef",
-  measurementId: "G-W5WDNG1X96",
 };
 
 class Firebase {
