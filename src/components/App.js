@@ -18,9 +18,9 @@ function App() {
 
   return firebaseInitialized !== false ? (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/Social-Media" component={Homepage} />
+          <Route exact path="/" component={Homepage} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={Register} />
           <Route exact path="/chatting" component={ChattingApp} />
