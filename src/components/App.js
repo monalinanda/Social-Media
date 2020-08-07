@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import ChattingApp from "./ChattingApp";
 import Homepage from "./Homepage";
 import Login from "./Login/Login";
